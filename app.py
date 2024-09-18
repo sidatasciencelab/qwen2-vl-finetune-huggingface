@@ -1,6 +1,6 @@
 import gradio as gr
 import torch
-from .src.finetune import train_and_validate
+from src.finetune import train_and_validate
 import json
 from datasets import load_dataset
 
