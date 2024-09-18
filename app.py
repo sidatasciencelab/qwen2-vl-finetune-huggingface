@@ -114,7 +114,6 @@ with gr.Blocks() as iface:
         with gr.Column():
             val_select_start = gr.Number(label="Validation Select Start", value=0)
             val_select_end = gr.Number(label="Validation Select End", value=10000)
-    with gr.Row():
         with gr.Column():
             device = gr.Dropdown(label="Device", choices=["cuda", "cpu", "mps"], value="cuda")
             min_pixel = gr.Number(label="Minimum Pixel Size", value=256, precision=0)
