@@ -126,7 +126,7 @@ with gr.Blocks() as iface:
     
     finetune_button.click(
         finetune_model,
-            inputs=[model_name,output_dir, dataset_name, image_column, text_column, user_text, num_accumulation_steps, eval_steps, max_steps, train_batch_size, val_batch_size, train_select_start, train_select_end, val_select_start, val_select_end, train_field, val_field],
+            inputs=[model_name,output_dir, dataset_name, image_column, text_column, user_text, num_accumulation_steps, eval_steps, max_steps, train_batch_size, val_batch_size, train_select_start, train_select_end, val_select_start, val_select_end, train_field, val_field, min_pixel, max_pixel, image_factor],
             outputs=[result]
     )
 
