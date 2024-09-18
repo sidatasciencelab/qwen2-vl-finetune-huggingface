@@ -117,10 +117,10 @@ with gr.Blocks() as iface:
     with gr.Row():
         with gr.Column():
             device = gr.Dropdown(label="Device", choices=["cuda", "cpu", "mps"], value="cuda")
-            min_pixel = gr.Number(label="Minimum Pixel Size", value=256)
+            min_pixel = gr.Number(label="Minimum Pixel Size", value=256, precision=0)
         with gr.Column():
-            max_pixel = gr.Number(label="Maximum Pixel Size", value=384)
-            image_factor = gr.Number(label="Image Factor", value=28)
+            max_pixel = gr.Number(label="Maximum Pixel Size", value=384, precision=0)
+            image_factor = gr.Number(label="Image Factor", value=28, precision=0)
     finetune_button = gr.Button("Start Finetuning")
     result = gr.Textbox(label="Result")
     
