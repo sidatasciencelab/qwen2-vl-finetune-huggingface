@@ -1,7 +1,7 @@
 #!/bin/sh
 # ----------------Parameters---------------------- #
 #$ -S /bin/sh
-#$ -q uThC.q -l lopri
+#$ -l s_cpu=24:00:00
 #$ -pe mthread 1
 #$ -l gpu,ngpu=1,gpu_arch=L40S
 #$ -cwd
