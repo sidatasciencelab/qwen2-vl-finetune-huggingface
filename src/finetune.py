@@ -291,9 +291,7 @@ def train_and_validate(
         model_name, torch_dtype=torch.bfloat16,
         device_map=device
     )
-    min_pixels = min_pixel*image_factor*image_factor
-    max_pixels = max_pixel*image_factor*image_factor
-    processor = AutoProcessor.from_pretrained(model_name, min_pixels=min_pixels, max_pixels=max_pixels, padding_side="right")
+    processor = AutoProcessor.from_pretrained(model_name, min_pixels=min_pixel*image_factor*image_factor, max_pixels=max_pixel*image_factor*image_factor, padding_side="right")
 
     # Load and split the dataset
     dataset = load_dataset(dataset_name)
