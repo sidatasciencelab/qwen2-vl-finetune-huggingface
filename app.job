@@ -1,7 +1,7 @@
 #!/bin/sh
 # ----------------Parameters---------------------- #
 #$ -S /bin/sh
-#$ -l s_cpu=24:00:00
+#$ -l s_cpu=60:00:00
 #$ -pe mthread 1
 #$ -l gpu,ngpu=1,gpu_arch=L40S
 #$ -cwd
