@@ -7,8 +7,8 @@
 #SBATCH --partition=gpu_h200 
 #SBATCH --time=4:00:00
 
-module load CUDA
-module load cuDNN
+# module load CUDA
+# module load cuDNN
 # using your anaconda environment
 conda init
 conda activate qwen
