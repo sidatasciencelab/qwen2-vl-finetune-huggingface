@@ -1,7 +1,12 @@
 gradio
 torch
 git+https://github.com/huggingface/transformers
+accelerate
 qwen-vl-utils
 datasets
 Pillow
 tqdm
+
+# Note: For Qwen 2.5-VL support, install transformers from source:
+# pip install git+https://github.com/huggingface/transformers accelerate
+# This prevents the KeyError: 'qwen2_5_vl' error
