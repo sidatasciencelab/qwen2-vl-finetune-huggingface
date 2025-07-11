@@ -10,5 +10,6 @@
 module load CUDA
 module load cuDNN
 # using your anaconda environment
+conda init
 conda activate qwen
 python demo.py
