@@ -2,7 +2,7 @@ from src.finetune25 import train_and_validate
 
 train_and_validate(
     model_name="Qwen/Qwen2.5-VL-7B-Instruct",
-    output_dir="/output",
+    output_dir="output",
     dataset_name="wjbmattingly/test-german-line",
     image_column="image",
     text_column="text",
