@@ -3,7 +3,7 @@
 #SBATCH --job-name=qwen25_train_test
 #SBATCH --output=qwen25_train_test.txt
 #SBATCH --cpus-per-gpu=2
-#SBATCH --gpus=gpu_h200
+#SBATCH --gpus=gpu_h200:1
 #SBATCH --partition=gpu
 #SBATCH --time=4:00:00
 
