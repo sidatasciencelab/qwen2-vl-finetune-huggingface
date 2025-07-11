@@ -3,8 +3,8 @@
 #SBATCH --job-name=qwen25_train_test
 #SBATCH --output=qwen25_train_test.txt
 #SBATCH --cpus-per-gpu=2
-#SBATCH --gpus=gpu_h200:1
-#SBATCH --partition=gpu
+#SBATCH --gres=gpu:h200:1              # Request 1 H200 GPU
+#SBATCH --partition=gpu_h200 
 #SBATCH --time=4:00:00
 
 module load CUDA
